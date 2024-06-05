@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>disaster</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides 
+{display:none;
+}
+h1{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+}
+button{
+  background-color: whitesmoke;
+}
+button:hover{
+  background-color: aqua;
+}
+body{
+  background-color: black;
+}
+</style>
+</head>
+<body>
+<h1 class="w3-center">GLOBAL PLATFORM FOR DISASTER RISK REDUCTION AND MANAGEMENT</h1>
+<button type="button"><a href="home.html">HOME</a></button>
+<div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides" src="C:\Users\abina\Downloads\ai-generated-8635240_1280.jpg" alt="Cinque Terre" width="1600" height="590">
+  <img class="mySlides" src="C:\Users\abina\Downloads\city-3615201_1280.jpg" alt="Cinque Terre" width="1600" height="590">
+  <img class="mySlides" src="C:\Users\abina\Downloads\yosh-ginsu-qexZLgMcbPc-unsplash.jpg" alt="Cinque Terre" width="1600" height="590">
+  <img class="mySlides" src="C:\Users\abina\Downloads\noaa-rxlx9Yi0298-unsplash.jpg" alt="Cinque Terre" width="1600" height="590">
+  <img class="mySlides" src="C:\Users\abina\Downloads\kelly-sikkema-_whs7FPfkwQ-unsplash.jpg" alt="Cinque Terre" width="1600" height="590">
+  <img class="mySlides" src="C:\Users\abina\Downloads\norman-meyer-tai1cTT5eX0-unsplash.jpg" alt="Cinque Terre" width="1600" height="590">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
